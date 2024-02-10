@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('ms-proxy-forms', async (req, res) => {
+app.post('/submit-form', async (req, res) => {
     const formUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtnAikstVGQXElR_f77KeT3Y_Gjev1LZfe8iWN7DnwJ8Phkg/formResponse';
 
     try {
